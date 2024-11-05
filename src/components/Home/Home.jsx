@@ -1,32 +1,13 @@
-import { useEffect, useRef, useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css'; // Import the CSS file
 
 import myselfRED from '../images/myselfRED.jpg';
-
 
 // Your component for the parallax container
 const Home = () => {
   const titleRef = useRef();
   const paragraphRef = useRef();
-  const [isOpen, setIsOpen] = useState(false);
-  const navigate = useNavigate();
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const navigateToBeforeDigital = () => {
-    navigate('/before-digital');
-  };
-
-  const navigateToDigital = () => {
-    navigate('/digital');
-  };
-
-  const navigateToFrontendProjects = () => {
-    navigate('/frontend-projects');
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,16 +25,17 @@ const Home = () => {
 
   return (
     <>
-      <div className="burger-menu-icon" onClick={toggleMenu}>
-        <div className="line" />
-        <div className="line" />
-        <div className="line" />
-      </div>
-      <div className={`menu ${isOpen ? 'open' : ''}`}>
-        <div className="menu-item"><Link to="/before-digital">Before Digital</Link></div>
-        <div className="menu-item"><Link to="/digital">Digital</Link></div>
-        <div className="menu-item"><Link to="/frontend-projects">Frontend projects</Link></div>
-      </div>
+      {/* Linear Navbar */}
+      <nav className="navbar">
+        <ul className="navbar-menu">
+          <li><Link to="/">Home</Link></li> {/* Home Link Added */}
+          <li><Link to="/before-digital">Before Digital</Link></li>
+          <li><Link to="/digital">Digital</Link></li>
+          <li><Link to="/frontend-projects">Frontend Projects</Link></li>
+          <li><Link to="/photography">Photography</Link></li>
+        </ul>
+      </nav>
+
       <div className="parallax-container" style={{ backgroundImage: `url(${myselfRED})` }}>
         <h1 ref={titleRef} className="title">ZUZANA DROPPOVA</h1>
         <p ref={paragraphRef} className="paragraph1">
@@ -70,11 +52,6 @@ const Home = () => {
         <p className="paragraph3">
           <h2>See My Artworks</h2>
         </p>
-        <div className="buttons">
-          <button onClick={navigateToBeforeDigital}>Before Digital</button>
-          <button onClick={navigateToDigital}>Digital</button>
-          <button onClick={navigateToFrontendProjects}>Frontend projects</button>
-        </div>
       </div>
     </>
   );
