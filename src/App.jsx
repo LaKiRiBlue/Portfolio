@@ -2,10 +2,11 @@
 
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
-import BeforeDigital from './components/BeforeDigital';
-import Digital from './components/Digital';
-import FrontendProjects from './components/FrontendProjects';
+import Home from "./components/Home/Home.jsx";
+import BeforeDigital from "./components/BeforeDigital/BeforeDigital.jsx";
+import Digital from "./components/Digital/Digital.jsx";
+import FrontendProjects from "./components/FrontendProjects/FrontendProjects.jsx";
+
 
 const App = () => {
   return (
