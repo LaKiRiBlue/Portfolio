@@ -53,7 +53,7 @@
   background-blend-mode: screen;
   color: white;
   width: 100%;
-  padding: 30px;
+  padding: 40px;
 }
 
 .paragraph1 {
@@ -67,7 +67,7 @@
 }
 
 .about {
-  font-size: 1.3em;
+  
   text-shadow: 1px 1px red;
   background: rgba(255, 255, 255, 0.5);
   background-blend-mode: screen;
@@ -78,12 +78,13 @@
 }
 
 .paragraph2 {
-  font-size: 1.3em;
-  text-align: center;
-  margin: 0;
-  color: white;
-  text-shadow: 2px 3px black;
-  padding: 0 150px;
+  font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px white;
+    padding: 0 25%;
+ 
 }
 
 .paragraph3 {
@@ -98,15 +99,35 @@
   background-blend-mode: screen;
 }
 
+/* Buttons in "See My Artworks" section */
 .buttons {
   display: flex;
-  justify-content: space-evenly;
+  gap: 5%;
+  justify-content: center;
   align-items: center;
-  margin-top: -26px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   background: rgba(255, 0, 0, 0.5);
   background-blend-mode: screen;
 }
+
+.button-link {
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.button-link:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
 
 .buttons button {
   background: none;
@@ -120,11 +141,7 @@
   transition: 0.5s;
 }
 
-.buttons button:hover {
-  background: rgba(255, 255, 255, 0.5);
-  background-blend-mode: screen;
-  color: black;
-}
+
 
 .burger-menu-icon {
   position: fixed;
