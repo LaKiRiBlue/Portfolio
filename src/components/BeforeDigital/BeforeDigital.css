@@ -1,7 +1,165 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    color: black;
+/* Resetting some basic styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; /* Global font */
+  color: white;
+}
+
+/* Burger Menu */
+.burger-menu-icon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 37px;
+  height: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+
+/* Menu Styles */
+.menu {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Invisible by default */
+  visibility: hidden; /* Make it non-interactive when closed */
+  transition: opacity 0.4s ease, visibility 0s 0.4s; /* Smooth transition */
+}
+
+.menu.open {
+  display: block;
+  opacity: 1; /* Make it visible */
+  visibility: visible; /* Make it interactive */
+  transition: opacity 0.4s ease, visibility 0s 0s; /* Ensure it's visible immediately */
+}
+
+.menu-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #eee;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  background-color: #242424;;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif; /* Override for specific container */
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Heading and Paragraph Styling */
+.main-container h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.main-container p {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+
+.gallery {
+  display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.gallery-image {
+  width: 200px; /* Adjust as needed */
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.gallery-image:hover {
+  transform: scale(1.01); /* Slight zoom effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add subtle shadow on hover */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .burger-menu-icon {
+    top: 15px;
+    left: 15px;
+  }
+
+  .gallery-image {
+    max-width: 90%; /* Make images responsive on small screens */
+  }
+  
+  .main-container h1 {
+    font-size: 2em;
+  }
+
+  .main-container p {
+    font-size: 1.2em;
+  }
 }
