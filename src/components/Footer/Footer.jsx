@@ -3,6 +3,7 @@ import './Footer.css';
 // Import social media icons (update paths to your actual images)
 import InstagramIcon from '../../assets/icons/square-instagram-brands-solid.svg';
 import FacebookIcon from '../../assets/icons/square-facebook-brands-solid.svg';
+import LinkedIn from '../../assets/icons/linkedin-brands-solid.svg';
 
 
 const Footer = () => {
@@ -11,11 +12,17 @@ const Footer = () => {
       <div className="footer-content">
         {/* Social Media Icons */}
         <div className="social-media">
-          <a href="#"><img src={InstagramIcon} alt="Instagram" /></a>
-         
-          <a href="#"><img src={FacebookIcon} alt="Facebook" /></a>
-        
-        </div>
+  <a href="https://www.instagram.com/kiri_karma/" target="_blank" rel="noopener noreferrer">
+    <img src={InstagramIcon} alt="Instagram" />
+  </a>
+  <a href="https://www.facebook.com/lakiri" target="_blank" rel="noopener noreferrer">
+    <img src={FacebookIcon} alt="Facebook" />
+  </a>
+  <a href="https://www.linkedin.com/in/zuzana-droppova/" target="_blank" rel="noopener noreferrer">
+    <img src={LinkedIn} alt="LinkedIn" />
+  </a>
+</div>
+
 
         {/* Contact Information */}
         <div className="contact-info">
