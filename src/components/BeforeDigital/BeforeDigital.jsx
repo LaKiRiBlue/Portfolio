@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Navbar from '../Navbar/Navbar';
+
 import './BeforeDigital.css';
 
 // Import each image individually
@@ -153,7 +153,7 @@ const BeforeDigital = () => {
 
   return (
     <>
-      <Navbar />
+     
       <div className="main-container">
         <div>
           <h1>Before Digital</h1>

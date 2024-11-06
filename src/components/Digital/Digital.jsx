@@ -1,6 +1,6 @@
 import './Digital.css';
 import {useState} from 'react';
-import Navbar from '../Navbar/Navbar';
+
 
 import Image1 from '../images/Digi/Audrey2022_1.jpg';
 import Image2 from '../images/Digi/az me povolaji k sobe_1.jpg';
@@ -201,7 +201,7 @@ const Digital = () => {
 
   return (
     <>
-      <Navbar />
+      
       <div className="main-container">
         <div>
           <h1>Digital</h1>

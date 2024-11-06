@@ -1,20 +1,10 @@
 // src/components/Home.jsx
 import { useEffect, useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import myselfRED from '../images/myselfRED.jpg';
 
-export const Navbar = () => (
-  <nav className="navbar">
-    <ul className="navbar-menu">
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/before-digital">Before Digital</Link></li>
-      <li><Link to="/digital">Digital</Link></li>
-      <li><Link to="/frontend-projects">Frontend Projects</Link></li>
-      <li><Link to="/photography">Photography</Link></li>
-    </ul>
-  </nav>
-);
+
 
 const Home = () => {
   const titleRef = useRef();
@@ -33,7 +23,7 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
+    
       <div className="parallax-container" style={{ backgroundImage: `url(${myselfRED})` }}>
         <h1 ref={titleRef} className="title">ZUZANA DROPPOVA</h1>
         <p ref={paragraphRef} className="paragraph1">

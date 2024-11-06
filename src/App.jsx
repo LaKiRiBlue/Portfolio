@@ -5,10 +5,13 @@ import BeforeDigital from "./components/BeforeDigital/BeforeDigital.jsx";
 import Digital from "./components/Digital/Digital.jsx";
 import FrontendProjects from "./components/FrontendProjects/FrontendProjects.jsx";
 import Photography from "./components/Photography/Photography.jsx"; 
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar.jsx';
 
 const App = () => {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/before-digital" element={<BeforeDigital />} />
@@ -16,6 +19,7 @@ const App = () => {
         <Route path="/frontend-projects" element={<FrontendProjects />} />
         <Route path="/photography" element={<Photography/>} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
