@@ -48,7 +48,7 @@ const Home = () => {
 
         {/* See My Artworks Section */}
         <div className="paragraph3">
-          <h2>See My Artworks</h2>
+          <h2>Check it out:</h2>
         </div>
         <div className="buttons">
           <button onClick={() => navigate('/before-digital')}>Before Digital</button>
