@@ -34,7 +34,8 @@ const Home = () => {
         <div className="about">
           <h2>About Me</h2>
           <p className="paragraph2">
-            Born and raised in Slovakia, living in Brussels since 2017. I&apos;m
+            I was born and raised in Slovakia. At the moment, I am living in Brussels since 2017. 
+            I&apos;m
             known as a writer of sci-fi and horror. Better known as an
             illustrator and a photographer.
             Since 2019, I only create digitally. I started with Gimp and Krita but smoothly moved to Adobe Creative Suite.
