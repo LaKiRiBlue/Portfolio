@@ -33,7 +33,7 @@
 
 .about {
   text-shadow: 1px 1px red;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.7);
   background-blend-mode: screen;
   width: 100%;
   padding: 20px;
@@ -44,12 +44,13 @@
 }
 
 .paragraph2 {
-  font-size: 1.2em;
-  font-weight: 600;
+  font-size: 1.4em;
+  font-weight: 400;
   text-align: center;
   color: black;
-  text-shadow: 1px 1px white;
+  text-shadow: 1px 1px 4px black;
   padding: 0 25%;
+  line-height: 40px;
 }
 
 
@@ -120,6 +121,9 @@
     flex-wrap: wrap;
     align-items: flex-end;
 
+}
+h2 {
+  margin: 20px;
 }
 
 
