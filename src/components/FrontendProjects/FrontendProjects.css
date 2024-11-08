@@ -5,7 +5,7 @@
     justify-content: flex-start;
     margin: 0 auto;
     background-color: #242424;
-    width: 100%;
+    width: 80%;
     height: 100%;
     padding: 0;
     border: 1px solid #000;
@@ -24,6 +24,7 @@
     font-size: 1.5em;
     font-weight: 400;
     margin: 20px 0;
+    
   }
   
   .projects {
