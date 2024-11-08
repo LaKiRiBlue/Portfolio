@@ -48,6 +48,7 @@ const Home = () => {
         </div>
 
         {/* See My Artworks Section */}
+        <div className='artworks'>
         <div className="paragraph3">
           <h2>Check it out:</h2>
         </div>
@@ -57,6 +58,8 @@ const Home = () => {
           <button onClick={() => navigate('/frontend-projects')}>Frontend Projects</button>
           <button onClick={() => navigate('/photography')}>Photography</button>
         </div>
+        </div>
+        
       </div>
     </>
   );

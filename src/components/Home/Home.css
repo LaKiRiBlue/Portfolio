@@ -55,24 +55,22 @@
 
 .paragraph3 {
   font-size: 1.3em;
-  text-align: center;
-  margin-top: 300px;
-  color: rgb(0, 0, 0);
-  text-shadow: 2px 3px black;
-  padding: 0 150px;
-  margin-bottom: 0;
-  background: rgba(255, 0, 0, 0.5);
-  background-blend-mode: screen;
+    text-align: center;
+    margin-top: 45px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 3px black;
+    padding: 0 150px;
+    margin-bottom: 0;
+    background-blend-mode: screen;
 }
 
-/* Buttons in "See My Artworks" section */
+
 .buttons {
   display: flex;
   gap: 5%;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  background: rgba(255, 0, 0, 0.5);
   background-blend-mode: screen;
 }
 
@@ -110,6 +108,18 @@
 .buttons button:hover {
   background: rgba(255, 255, 255, 0.342);
   background-blend-mode: screen;
+}
+.artworks {
+  display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    background-blend-mode: screen;
+    background: rgba(255, 0, 0, 0.5);
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
 }
 
 
