@@ -45,54 +45,10 @@ body {
   margin-top: 20px;
 }
 
-/* Gallery Section */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: row;
-}
-
-.gallery-image {
-  width: 200px; /* Adjust as needed */
-  cursor: pointer;
-}
-
-/* Modal Styling */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
+.project-image {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0s 0.4s;
+  height: auto;
+  margin-top: 20px;
 }
 
-.modal.open {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.4s ease, visibility 0s 0s;
-}
 
-.modal-content {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 90%;
-  max-height: 80%;
-  overflow: auto;
-}
-
-/* Add a hover effect for images */
-.gallery-image:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
