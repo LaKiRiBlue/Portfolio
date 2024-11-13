@@ -163,7 +163,7 @@ const BeforeDigital = () => {
             Here are some of my artworks from that era.
           </p>
         </div>
-        <div className="gallery">
+        <div className="galleryBD">
           {images.map((image, index) => (
             <img
               key={index}

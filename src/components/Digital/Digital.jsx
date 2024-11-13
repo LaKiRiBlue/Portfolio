@@ -212,7 +212,7 @@ const Digital = () => {
             Here are some of my artworks from more recent era.
           </p>
         </div>
-        <div className="gallery">
+        <div className="galleryD">
           {images.map((image, index) => (
             <img
               key={index}
