@@ -1,6 +1,6 @@
 import express from 'express';
 const router = express.Router();
-import Tshirt from '../models/Tshirt';
+import Tshirt from '../models/Tshirt.js';
 
 router.get('/', async (req, res) => {
   try {
