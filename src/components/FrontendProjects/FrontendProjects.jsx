@@ -1,4 +1,5 @@
 import Image1 from '../images/Frontend/Whistleblower.jpg';
+import Image2 from '../images/Frontend/burning-city-GIF.gif';
 import './FrontendProjects.css';
 
 const FrontendProjects = () => {
@@ -21,6 +22,15 @@ const FrontendProjects = () => {
             Whistleblower is a web application that allows users to report corruption and other crimes. The application is built with Figma + React.js.
           </p>
           <a className="styled-link" href="https://whistle-blower-frontend.vercel.app" target="_blank" rel="noopener noreferrer">
+            See project
+          </a>
+        </div>
+        <img className="project-image" src={Image2} alt="Green Hiro" />
+        <div className="project-info">
+          <p>
+            Green Hiro is a mini RPG game. Created by 5 women for Hackathon at Interface 3. The game is built with Figma + React.js.
+          </p>
+          <a className="styled-link" href="https://github.com/LaKiRiBlue/Hackaton" target="_blank" rel="noopener noreferrer">
             See project
           </a>
         </div>
