@@ -1,13 +1,12 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import tshirtRoutes from './routes/tshirtRoutes.js'; 
+import Tshirt from './models/Tshirt.js';
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/images', express.static('public/images'));
-
 
 mongoose.connect('mongodb://localhost:27017/tshirtDB', {
   useNewUrlParser: true,
@@ -21,6 +20,10 @@ const tShirt = new mongoose.Schema({
       type: String,
       require: true
   },
+  description: {
+      type: String,
+      require: true
+  },
   imageUrl: {
       type: String,
       require: true
@@ -31,18 +34,18 @@ const MyModel = mongoose.model('TshirtData', tShirt);
 // Works
 await MyModel.findOne();
 
+console.log('Hello World');
 
+let tshirt1 = new Tshirt({
+  name: "IMG20241017125143.jpg",
+  imageUrl: "/images/IMG20241017125143.jpg"
+});
 
-app.use('/api/tshirts', tshirtRoutes);
-app.listen(5000, () => console.log('Server running on http://localhost:5000'));
+tshirt1.save();
 
+tshirt1 = new Tshirt({
+  name: "IMG20241017125305.jpg",
+  imageUrl: "/images/IMG20241017125305.jpg"
+});
 
-
-
-
-app.get("/test",async (req,res2) =>{
-  let picture = await MyModel.find().limit(-1).skip(Math.floor(Math.random() *await MyModel.collection.countDocuments())).findOne();
-  res2.send("<IMG src=\""+picture.imageUrl+"\" alt=\""+picture.name+"\"/>")}
-);
-
-
+tshirt1.save();

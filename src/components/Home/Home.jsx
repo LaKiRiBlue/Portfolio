@@ -59,7 +59,7 @@ const Home = () => {
           <button onClick={() => navigate('/photography')}>Photography</button>
         </div>
         </div>
-        
+        <button onClick={() => navigate('/tshirts')} className="tshirts-button">T-shirts collection</button>
         
       </div>
     </>
