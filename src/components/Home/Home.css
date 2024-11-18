@@ -126,4 +126,19 @@ h2 {
   margin: 25px;
 }
 
-
+.tshirts-button{
+  background: none;
+  border: none;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.tshirts-button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+}
