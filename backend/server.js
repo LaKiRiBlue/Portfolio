@@ -10,6 +10,7 @@ app.use(express.json());
 // Serve static images from the 'public/images' folder
 app.use('/images', express.static('public/images'));
 
+
 mongoose.connect('mongodb://localhost:27017/tshirtDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true,

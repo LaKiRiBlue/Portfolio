@@ -5,7 +5,7 @@ const TshirtList = () => {
   const [tshirts, setTshirts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/test')
+    fetch('http://localhost:5000/api/tshirts')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -15,12 +15,10 @@ const TshirtList = () => {
       .then((data) => {
         console.log(data); // Check the data structure in the console
         setTshirts(Array.isArray(data) ? data : [data]);
- // Adjust based on actual data structure
-        // Wrap data in an array if needed
       })
       .catch((error) => console.error('Error fetching data:', error));
-      console.log("TshirtList component rendered");
-  }, []);
+  }, []); // The empty array ensures `useEffect` runs only once when the component mounts
+  
 
   return (
     <div className="tshirt-gallery">
@@ -29,7 +27,14 @@ const TshirtList = () => {
       ) : (
         tshirts.map((tshirt, index) => (
           <div key={index} className="tshirt-card">
-            <img src={tshirt.imageUrl} alt={tshirt.name} />
+            <img 
+              src={`http://localhost:5000/images/${tshirt.imageUrl}`} 
+              alt={tshirt.name} 
+              onError={(e) => {
+                console.error(`Error loading image: ${tshirt.imageUrl}`);
+                e.target.src = 'path/to/placeholder/image.jpg'; // Fallback image
+              }}
+            />
             <h3>{tshirt.name}</h3>
             <p>{tshirt.description}</p>
           </div>
