@@ -1,36 +1,131 @@
 /* TshirtList.css */
+
+/* T-shirt Gallery */
 .tshirt-gallery {
+  flex-grow: 1;
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 50px;
 }
 
+/* T-shirt Card */
 .tshirt-card {
   padding: 20px;
-    text-align: center;
-    width: 30%;
-    transition: transform 0.2s ease-in-out;
+  margin: 20px;
+  text-align: center;
+  width: 30%;
+  transition: transform 0.2s ease-in-out;
 }
 
+/* Image inside T-shirt Card */
 .tshirt-card img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
 }
 
+/* Hover Effect for T-shirt Card */
 .tshirt-card:hover {
-  transform: scale(1.05); /* Hover effect for cards */
+  transform: scale(1.05); /* Slight zoom effect */
 }
+
+/* T-shirt Page Container */
 .tshirt-page-container {
   min-height: calc(100vh - 200px); /* Ensure the main section doesn't overlap the footer */
   display: flex;
   flex-direction: column;
 }
 
+/* Gallery Section */
 .tshirt-gallery {
   flex-grow: 1; /* Allows gallery to take up available space */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+.next-button,
+.like-button {
+  background-color: #f9f9f900;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+/* Hover Effects for Buttons */
+.next-button:hover {
+  background-color: #cf000091; /* Red on hover */
+}
+
+.like-button:hover {
+  background-color: #4caf5080; /* Semi-transparent green for hover effect */
+}
+
+/* Text inside T-shirt Card */
+.tshirt-card p {
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+/* Media Queries for Small Screen Devices */
+@media (max-width: 768px) {
+  /* T-shirt Card */
+  .tshirt-card {
+    width: 80%; /* Make each card larger for smaller screens */
+    margin: 10px 0;
+  }
+
+  /* T-shirt Gallery */
+  .tshirt-gallery {
+    gap: 10px; 
+    padding-top: 200px !important;
+    padding: 10px;
+  }
+
+  /* Buttons */
+  .next-button,
+  .like-button {
+    font-size: 1.5rem; /* Slightly smaller font size */
+    padding: 8px 15px;
+  }
+
+  /* T-shirt Card Text */
+  .tshirt-card p {
+    font-size: 1.4rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  /* T-shirt Card */
+  .tshirt-card {
+    width: 100%; /* Cards take full width on very small screens */
+    margin: 5px 0;
+    
+  }
+
+  /* T-shirt Gallery */
+  .tshirt-gallery {
+    gap: 5px; /* Smaller gap between cards */
+    padding: 10px;
+  }
+
+  /* Buttons */
+  .next-button,
+  .like-button {
+    font-size: 1.2rem; /* Even smaller font size for very small screens */
+    padding: 6px 12px;
+  }
+
+  /* T-shirt Card Text */
+  .tshirt-card p {
+    font-size: 1.2rem; /* Smaller text for very small screens */
+  }
+  h1{
+    font-size: 2em;
+  }
 }
