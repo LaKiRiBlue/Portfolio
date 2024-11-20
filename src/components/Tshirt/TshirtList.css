@@ -1,18 +1,36 @@
+/* TshirtList.css */
 .tshirt-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .tshirt-card {
-    border: 1px solid #ccc;
-    padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.tshirt-card {
+  padding: 20px;
     text-align: center;
-    max-width: 200px;
-  }
-  
-  .tshirt-card img {
-    max-width: 100%;
-    height: auto;
-  }
-  
+    width: 30%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tshirt-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.tshirt-card:hover {
+  transform: scale(1.05); /* Hover effect for cards */
+}
+.tshirt-page-container {
+  min-height: calc(100vh - 200px); /* Ensure the main section doesn't overlap the footer */
+  display: flex;
+  flex-direction: column;
+}
+
+.tshirt-gallery {
+  flex-grow: 1; /* Allows gallery to take up available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

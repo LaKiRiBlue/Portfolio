@@ -91,4 +91,8 @@
   .submit-btn:hover {
     background-color: #cc0000;
   }
- 
+  .footer {
+    width: 99vw; /* Ensure it spans the page width */
+    box-sizing: border-box;
+  }
+  
