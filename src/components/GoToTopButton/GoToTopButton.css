@@ -6,8 +6,8 @@
     padding: 10px 20px;
     font-size: 16px;
     background-color: white;
-    color: #333; /* Dark text for contrast */
-    border: 2px solid #333; /* Border for better visibility */
+    color: #333; 
+    border: 2px solid #333; 
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -23,7 +23,7 @@
   }
   
   .go-to-top:hover {
-    background-color: #f0f0f0; /* Slightly darker background on hover */
-    border-color: #007bff; /* Border changes color on hover */
+    background-color: #f0f0f0; 
+    border-color: #007bff; 
   }
   
