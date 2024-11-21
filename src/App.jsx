@@ -8,6 +8,7 @@ import Photography from "./components/Photography/Photography.jsx";
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Tshirt from './components/Tshirt/TshirtList.jsx';
+import GoToTopButton from './components/GoToTopButton/GoToTopButton.jsx'; // Import GoToTopButton
 
 const App = () => {
   return (
@@ -18,9 +19,10 @@ const App = () => {
         <Route path="/before-digital" element={<BeforeDigital />} />
         <Route path="/digital" element={<Digital />} />
         <Route path="/frontend-projects" element={<FrontendProjects />} />
-        <Route path="/photography" element={<Photography/>} />
+        <Route path="/photography" element={<Photography />} />
         <Route path="/tshirts" element={<Tshirt />} />
       </Routes>
+      <GoToTopButton /> {/* Add GoToTopButton here */}
       <Footer />
     </Router>
   );
