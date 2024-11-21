@@ -1,13 +1,15 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  assetsInclude: ['**/*.JPG'],
+  assetsInclude: ['**/*.JPG', '**/*.jpg'], // Include both uppercase and lowercase extensions
   server: {
     watch: {
       usePolling: true,
     },
   },
-  base: './', // Ensures proper relative paths for assets
-});
+  build: {
+    outDir: 'dist',
+  },
+})
