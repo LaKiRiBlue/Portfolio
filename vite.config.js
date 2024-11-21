@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  assetsInclude: ['**/*.JPG', '**/*.jpg'], // Include both uppercase and lowercase extensions
+  assetsInclude: ['**/*.jpg', '**/*.JPG'],
+  // Include both uppercase and lowercase extensions
   server: {
     watch: {
       usePolling: true,
