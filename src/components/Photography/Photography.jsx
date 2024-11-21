@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import Image1 from '../images/Photography/cosplay.jpg';
-import Image2 from '../images/Photography/travelling.jpg';
-import Image3 from '../images/Photography/wrestling.jpg';
+import Image1 from './cosplay.jpg';
+import Image2 from './travelling.jpg';
+import Image3 from './wrestling.jpg';
 import './Photography.css';
+
 
 const Photography = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
