@@ -29,7 +29,7 @@
 .main-container p {
   font-size: 1.5em;
   font-weight: 400;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .categories {
@@ -56,10 +56,18 @@
 .styled-link {
   color: #cf0000;
   text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.5s;
+  margin: 10px;
 }
+
+
 
 .styled-link:hover {
   background: rgba(255, 255, 255, 0.342);
