@@ -57,9 +57,10 @@ const Home = () => {
           <button onClick={() => navigate('/digital')}>Digital</button>
           <button onClick={() => navigate('/frontend-projects')}>Frontend Projects</button>
           <button onClick={() => navigate('/photography')}>Photography</button>
+          <button onClick={() => navigate('/tshirts')} className="tshirts-button">T-shirts collection</button>
         </div>
         </div>
-        <button onClick={() => navigate('/tshirts')} className="tshirts-button">T-shirts collection</button>
+        
         
       </div>
     </>
